@@ -38,3 +38,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 yarn create next-app --typescript myportfolio
 yarn add -D tailwindcss@latest
 yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest
+
+yarn add framer-motion
