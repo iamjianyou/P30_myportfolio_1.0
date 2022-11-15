@@ -5,8 +5,14 @@ type Props = {}
 
 export default function About({}: Props) {
   return (
-    <div className="flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 h-screen justify-evenly mx-auto items-center">
-        
+    <motion.div 
+    className="flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 h-screen justify-evenly mx-auto items-center"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        //   viewport={{ once: true }}
+        transition={{ duration: 1.5 }}
+    >
+    
        
         <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
             About
@@ -40,6 +46,6 @@ Han er godt kjent med smidig utviklingsmetodikk (scrum), samt ulike prosjektstyr
 Jianyou er strukturert, målrettet og ikke redd for utfordringer. Han er glad i å utforske nye teknologier. Jianyou er også en utadvendt og blid person, og oppfattes som engasjert og lærevillig. 
             </p>
         </div>
-    </div>
+    </motion.div>
   )
 }
